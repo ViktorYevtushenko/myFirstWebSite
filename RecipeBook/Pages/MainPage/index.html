@@ -2,113 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First HTML Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    header, footer {
-      background-color: #e0e0e0;
-      padding: 10px;
-      border-radius: 6px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #007BFF;
-    }
-    table, th, td {
-      border: 1px solid gray;
-      border-collapse: collapse;
-      padding: 8px;
-    }
-    form {
-      background-color: #fff;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    input, textarea {
-      display: block;
-      margin-bottom: 10px;
-      width: 100%;
-      padding: 6px;
-    }
-  </style>
+  <title>BugNews</title>
+ <script src="../../../Resources/Localization/js/i18n.js" defer></script>
+
 </head>
 <body>
+  <nav>
+<a href="#" id="btn-en">🇬🇧</a>
+<a href="#" id="btn-de">🇩🇪</a>
+  </nav>
 
-  <header>
-    <h1>Welcome to My HTML Page</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  <h1 data-i18n="title">Loading...</h1>
+  <p data-i18n="subtitle"></p>
 
-  <h2>About This Page</h2>
-  <p>This is a simple page built with HTML to demonstrate the most important elements.</p>
-
-  <h3>Some Bold and Italic Text</h3>
-  <p>This is <b>bold</b>, this is <i>italic</i>, and this is a <a href="https://example.com">link</a>.</p>
-
-  <h3>Image Example</h3>
-  <img src="https://placekitten.com/300/200" alt="Cute kitten" width="300" />
-
-  <h3>Lists</h3>
   <ul>
-    <li>Milk</li>
-    <li>Bread</li>
-    <li>Butter</li>
+    <li data-i18n="menu_home"></li>
+    <li data-i18n="menu_gossip"></li>
+    <li data-i18n="menu_politics"></li>
+    <li data-i18n="menu_food"></li>
   </ul>
-
-  <ol>
-    <li>Wake up</li>
-    <li>Code</li>
-    <li>Repeat</li>
-  </ol>
-
-  <h3>Table Example</h3>
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Anna</td>
-      <td>25</td>
-    </tr>
-    <tr>
-      <td>John</td>
-      <td>30</td>
-    </tr>
-  </table>
-
-  <h3>Form Example</h3>
-  <form action="/submit" method="post">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required />
-
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="message">Your Message:</label>
-    <textarea id="message" name="message" rows="4"></textarea>
-
-    <button type="submit">Send</button>
-  </form>
-
-  <footer>
-    <p>&copy; 2025 My First HTML Page. All rights reserved.</p>
-  </footer>
-
 </body>
 </html>
