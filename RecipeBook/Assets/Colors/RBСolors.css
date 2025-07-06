@@ -1,0 +1,20 @@
+ :root {
+  /* === Base background colors === */
+  --rbLightBeige:    #FFF8E1;    /* Light beige – main page background */
+  --rbSoftGreen:     #AED581;    /* Soft green – news card background */
+  --rbDarkGreen:     #2E7D32;    /* Dark green – header, footer, titles */
+  --rbWhite:         #FFFFFF;    /* Pure white – form backgrounds, text on dark */
+
+  /* === Grays for text and borders === */
+  --rbDarkGray:      #212121;    /* Dark gray – main text color */
+  --rbGray:          #CCCCCC;    /* Medium gray – input borders */
+  --rbLightGray:     #E0E0E0;    /* Light gray – dividers, outlines */
+
+  /* === Accent and status colors === */
+  --rbBrightYellow:  #FFEB3B;    /* Bright yellow – highlights, links, accents */
+  --rbStrongRed:     #D32F2F;    /* Strong red – warnings, breaking news */
+
+  /* === Shadows === */
+  --rbSoftShadow:    rgba(0, 0, 0, 0.1); /* Soft shadow – for card depth */
+}
+
