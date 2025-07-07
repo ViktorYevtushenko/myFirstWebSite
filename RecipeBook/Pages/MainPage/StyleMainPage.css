@@ -1,0 +1,21 @@
+.title {
+  font-size: 200px;
+  color: var(--rbDarkGreen); /* або інший відповідний */
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--rbDarkGray);
+  font-style: italic;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: var(--rbStrongRed);
+}
+
+.menu-item {
+  font-size: 16px;
+  color: var(--rbLightGray);
+}
