@@ -1,8 +1,15 @@
 {
   "title": "Welcome to my Receipt Book!",
-  "subtitle": "Latest gossip from the bug world.",
+  "subtitle": "You can find a lot of dishes and please try it to cook.",
   "menu_home": "Home",
   "menu_gossip": "Gossip",
   "menu_politics": "Politics",
-  "menu_food": "Food Watch"
-}
+  "menu_food": "Food Watch",
+
+  "strBorscht": "Borscht",
+  "strDumplings" : "Dumplings",
+  "strStuffedCabbageRolls" : "Stuffed Cabbage Rolls",
+  "strPotatoPancakes" : "Potato Pancakes",
+  "strPancakes" : "Pancakes",
+  "strBugSoup" : "Bug Soup"
+} 
