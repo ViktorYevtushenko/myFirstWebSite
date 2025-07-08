@@ -1,10 +1,13 @@
-
 .mainPage {
     .title {
         font-family: 'FiraSans', sans-serif;
         font-size: 32px;
-        color: var(--rbDarkGreen);
+        color: var(--rbWhite);
         font-weight: 700;
+        text-align: center;
+        background-color: var(--rbDarkGreen);
+        padding: 20px 10px;
+        margin: 0;
     }
     
     .subtitle {
@@ -12,6 +15,24 @@
         font-size: 18px;
         color: var(--rbDarkGray);
         font-style: italic;
+        text-align: center;
+        background-color: var(--rbLightBeige);
+        padding: 10px;
+        margin: 0 0 20px 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 20px;
+        background-color: var(--rbSoftGreen);
+    }
+    
+    nav a {
+        margin-left: 15px;
+        font-size: 24px;
+        text-decoration: none;
+        cursor: pointer;
     }
     
     .nav-link {
@@ -25,10 +46,75 @@
         font-size: 16px;
         color: var(--rbLightGray);
     }
-    
-    .pisun {
-        font-family: 'FiraSans', sans-serif;
-        font-size: 127px;
-        color: var(--rbLightGray);
-    }
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+
+
+    .cardTitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* напівпрозорий фон */
+    color: white;
+    text-align: center;
+    font-family: 'FiraSans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* квадратна картка */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Зображення через CSS-перемінні з твого RBImages.css */
+.card.borscht {
+    background-image: var(--imgBorscht);
+}
+
+.card.dumplings {
+    background-image: var(--imgDumplings);
+}
+
+.card.stuffedCabbageRolls {
+    background-image: var(--imgStuffedCabbageRolls);
+}
+
+.card.potatoPancakes {
+    background-image: var(--imgPotatoPancakes);
+}
+
+.card.pancakes {
+    background-image: var(--imgPancakes);
+}
+
+.card.bugSoup {
+    background-image: var(--imgBugSoup);
+}
+
+
+/* <--! Hot fix: Removed paddings from all sides --> */
+* {
+    margin: 0;
 }
