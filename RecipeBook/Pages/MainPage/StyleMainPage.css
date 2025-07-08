@@ -1,21 +1,34 @@
-.title {
-  font-size: 200px;
-  color: var(--rbDarkGreen); /* або інший відповідний */
-  font-weight: 700;
-}
 
-.subtitle {
-  font-size: 18px;
-  color: var(--rbDarkGray);
-  font-style: italic;
-}
-
-.nav-link {
-  font-size: 20px;
-  color: var(--rbStrongRed);
-}
-
-.menu-item {
-  font-size: 16px;
-  color: var(--rbLightGray);
+.mainPage {
+    .title {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 32px;
+        color: var(--rbDarkGreen);
+        font-weight: 700;
+    }
+    
+    .subtitle {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 18px;
+        color: var(--rbDarkGray);
+        font-style: italic;
+    }
+    
+    .nav-link {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 20px;
+        color: var(--rbStrongRed);
+    }
+    
+    .menu-item {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 16px;
+        color: var(--rbLightGray);
+    }
+    
+    .pisun {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 127px;
+        color: var(--rbLightGray);
+    }
 }
