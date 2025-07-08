@@ -1,7 +1,7 @@
 function setLang(lang) {
   console.log("Setting language to:", lang); // для перевірки
 
-  fetch(`/RecipeBook/Resources/Localization/${lang}.json`)
+  fetch(`RecipeBook/Resources/Localization/${lang}.json`)
     .then(res => res.json())
     .then(data => {
       document.querySelectorAll("[data-i18n]").forEach(el => {
