@@ -1,0 +1,139 @@
+.mainPage {
+    .title {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 32px;
+        color: var(--rbWhite);
+        font-weight: 700;
+        text-align: center;
+        background-color: var(--rbDarkGreen);
+        padding: 20px 10px;
+        margin: 0;
+    }
+    
+    .subtitle {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 18px;
+        color: var(--rbDarkGray);
+        font-style: italic;
+        text-align: center;
+        background-color: var(--rbLightBeige);
+        padding: 10px;
+        margin: 0 0 0px 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 20px;
+        background-color: var(--rbSoftGreen);
+    }
+    
+    nav a {
+        margin-left: 15px;
+        font-size: 24px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .nav-link {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 20px;
+        color: var(--rbStrongRed);
+    }
+    
+    .menu-item {
+        font-family: 'FiraSans', sans-serif;
+        font-size: 16px;
+        color: var(--rbLightGray);
+    }
+}
+
+/* <--! Should move these blocks to mainPage css class --> */
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--rbLightBeigeTransparent); /* світлий фон замість rgba */
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* квадратна картка */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 8px var(--rbSoftShadow); /* тінь з змінної */
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardTitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--rbLightGrayShadow);
+    color: var(--rbWhite);
+    text-align: center;
+    font-family: 'FiraSans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card.borscht {
+  background-image: var(--imgBorscht);
+  background-size: cover;
+  background-position: center;
+}
+
+.card.dumplings {
+    background-image: var(--imgDumplings);
+}
+
+.card.stuffedCabbageRolls {
+    background-image: var(--imgStuffedCabbageRolls);
+}
+
+.card.potatoPancakes {
+    background-image: var(--imgPotatoPancakes);
+}
+
+.card.pancakes {
+    background-image: var(--imgPancakes);
+}
+
+.card.bugSoup {
+    background-image: var(--imgBugSoup);
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--rbSoftGreen);
+    font-family: 'FiraSans', sans-serif;
+    font-size: 16px;
+    color: var(--rbDarkGreen);
+    margin-top: 0px;
+}
+
+.footer a {
+    color: var(--rbStrongRed);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* <--! Hot fix: Removed paddings from all sides --> */
+* {
+    margin: 0;
+}
