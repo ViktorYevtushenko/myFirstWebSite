@@ -1,8 +1,9 @@
 :root {
-    --imgBorscht: url('Borscht.png');
-    --imgDumplings: url('Dumplings.png');
-    --imgStuffedCabbageRolls: url('StuffedCabbageRolls.png');
-    --imgPotatoPancakes: url('PotatoPancakes.png');
-    --imgPancakes: url('Pancakes.png');
-    --imgBugSoup: url('BugSoup.png');
+    --imgBorscht: url('/myFirstWebSite/RecipeBook/Resources/Images/Borscht.png');
+    --imgDumplings: url('/myFirstWebSite/RecipeBook/Resources/Images/Dumplings.png');
+    --imgStuffedCabbageRolls: url('/myFirstWebSite/RecipeBook/Resources/Images/StuffedCabbageRolls.png');
+    --imgPotatoPancakes: url('/myFirstWebSite/RecipeBook/Resources/Images/PotatoPancakes.png');
+    --imgPancakes: url('/myFirstWebSite/RecipeBook/Resources/Images/Pancakes.png');
+    --imgBugSoup: url('/myFirstWebSite/RecipeBook/Resources/Images/BugSoup.png');
+
 }
