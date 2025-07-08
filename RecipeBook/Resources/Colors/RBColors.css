@@ -16,6 +16,7 @@
 
   /* === Shadows === */
   --rbSoftShadow:    rgba(0, 0, 0, 0.1); /* Soft shadow – for card depth */
+  --rbLightGrayShadow: rgba(0, 0, 0, 0.3);
   --rbLightBeigeTransparent: rgba(225, 248, 225, 0.7);
 } 
 
