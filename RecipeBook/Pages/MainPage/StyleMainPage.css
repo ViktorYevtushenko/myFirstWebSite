@@ -18,7 +18,7 @@
         text-align: center;
         background-color: var(--rbLightBeige);
         padding: 10px;
-        margin: 0 0 20px 0;
+        margin: 0 0 0px 0;
     }
     
     nav {
@@ -48,25 +48,13 @@
     }
 }
 
+/* <--! Should move these blocks to mainPage css class --> */
 .cardsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 0 20px 20px 20px;
-
-
-    .cardTitle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.5); /* напівпрозорий фон */
-    color: white;
-    text-align: center;
-    font-family: 'FiraSans', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-}
+    padding: 20px;
+    background-color: var(--rbLightBeigeTransparent); /* світлий фон замість rgba */
 }
 
 .card {
@@ -78,7 +66,7 @@
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px var(--rbSoftShadow); /* тінь з змінної */
     transition: transform 0.2s ease;
 }
 
@@ -86,11 +74,23 @@
     transform: scale(1.05);
 }
 
+.cardTitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--rbLightGrayShadow);
+    color: var(--rbWhite);
+    text-align: center;
+    font-family: 'FiraSans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
 
-
-/* Зображення через CSS-перемінні з твого RBImages.css */
 .card.borscht {
-    background-image: var(--imgBorscht);
+  background-image: var(--imgBorscht);
+  background-size: cover;
+  background-position: center;
 }
 
 .card.dumplings {
@@ -113,6 +113,25 @@
     background-image: var(--imgBugSoup);
 }
 
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--rbSoftGreen);
+    font-family: 'FiraSans', sans-serif;
+    font-size: 16px;
+    color: var(--rbDarkGreen);
+    margin-top: 0px;
+}
+
+.footer a {
+    color: var(--rbStrongRed);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 
 /* <--! Hot fix: Removed paddings from all sides --> */
 * {

@@ -1,4 +1,4 @@
- :root {
+:root {
   /* === Base background colors === */
   --rbLightBeige:    #FFF8E1;    /* Light beige – main page background */
   --rbSoftGreen:     #AED581;    /* Soft green – news card background */
@@ -16,5 +16,5 @@
 
   /* === Shadows === */
   --rbSoftShadow:    rgba(0, 0, 0, 0.1); /* Soft shadow – for card depth */
+  --rbLightBeigeTransparent: rgba(225, 248, 225, 0.7);
 }
-
