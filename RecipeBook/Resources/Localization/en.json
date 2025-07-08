@@ -1,10 +1,6 @@
 {
   "title": "Welcome to my Receipt Book!",
   "subtitle": "You can find a lot of dishes and please try it to cook.",
-  "menu_home": "Home",
-  "menu_gossip": "Gossip",
-  "menu_politics": "Politics",
-  "menu_food": "Food Watch",
 
   "strBorscht": "Borscht",
   "strDumplings" : "Dumplings",
